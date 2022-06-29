@@ -1,5 +1,5 @@
-with payments as (
-    select * from {{ref('stg_payments')}}
+with payment as (
+     select * from {{ ref('stg_payment')}}
 )
 
-select * from payments
+select * from payment
